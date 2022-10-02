@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Roboto+Condensed:wght@300&display=swap');
+
+:root{
+    --light-cyan : hsl(193, 38%, 86%);
+    --neon-green : hsl(150, 100%, 66%);
+    --grayish-blue : hsl(217, 19%, 38%);
+    --dark-grayish-blue : hsl(217, 19%, 24%);
+    --dark-blue : hsl(218, 23%, 16%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Manrope',sans-serif;
+    font-size: 16px;
+    background-color: var(--dark-blue) ;
+    padding: 1.25rem ;  
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 0.1px);
+}
+
+p{
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+.container{
+    background-color:var(--dark-grayish-blue);
+    padding: 1.25rem 1.25rem 2rem;
+    border-radius: 1rem;
+}
+
+.container h1{
+    color: var(--neon-green);
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: .75rem;
+}
+
+.container p{
+    margin-bottom: 1rem;
+    color: var(--light-cyan)
+}
+
+.container picture img{
+    margin-bottom: 1rem;
+}
+
+.container button{
+    background-color: var(--neon-green);
+    padding: .9rem;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container button img{
+    padding-top: .2rem;
+}
+
+.container button:hover{
+    background-color: hsl(150, 91%, 51%);
+    box-shadow:0px 0px 30px hsl(150, 100%, 66%);
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 4rem; color: var(--light-cyan);}
+.attribution a { color: hsl(228, 71%, 61%); }
+
+
+@media (min-width: 500px){
+    .container  {
+        max-width: 480px;
+    }
+}
