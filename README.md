@@ -1,1 +1,1 @@
-https://threejs-is-a-bitch.netlify.app/
+https://psc-advice-generator.netlify.app
